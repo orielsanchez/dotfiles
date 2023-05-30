@@ -25,3 +25,16 @@ keymap("t", "kj", "<C-\\><C-n>", default_opts)
 keymap("n", "<CR>", ":noh<CR><CR>", default_opts)
 keymap("i", ",m", "<ESC>:w<CR>:!clear;python3 %<CR>", default_opts)
 keymap("n", ",m", ":w<CR>:!clear;python3 %<CR>", default_opts)
+
+local M = {}
+
+M.general = {
+  n = {
+    ["<C-h>"] = { "<cmd> TmuxNavigateLeft<CR>", "window left" },
+    ["<C-l>"] = { "<cmd> TmuxNavigatRight<CR>", "window right" },
+    ["<C-j>"] = { "<cmd> TmuxNavigateDown<CR>", "window down" },
+    ["<C-k>"] = { "<cmd> TmuxNavigateUp<CR>", "window up" },
+  }
+}
+
+
