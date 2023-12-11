@@ -1,0 +1,80 @@
+leader key ctrl-space
+
+-----------------------------------------
+Sessions
+# start new session
+  $ tmux
+  $ tmux new -s sessionname
+
+# rename session
+  <leader>+$
+
+# detach from session
+  <leader>+d
+
+# kill all sessions but the current
+   $ tmux kill-session -a
+
+# show all session
+  $tmux ls
+  <leader> s
+
+# attach to last session
+  # tmux a
+
+# attach to a session w/ name mysession
+  $ tmux a -t mysession
+
+# move to next session
+  <leader> )
+
+# move to prev session
+  <leader> (
+
+-----------------------------------------
+Windows
+
+# start new session with name 'mysession' and window 'mywindow'
+  $ tmux new -s mysession -n mywindow
+
+# Create window
+  <leader> c
+
+# rename current window
+  <leader> ,
+
+# close current window
+  <leader> &
+
+# list windows
+  <leader> w
+
+# next window
+  <leader> n
+
+-----------------------------------------------
+Panes
+
+# vim like pane selection
+  ctrl+h/j/k/l
+
+# toggle last active pane
+  <leader> ;
+
+# split pane horizontally
+  <leader> %
+
+# split pane vertically
+  <leader> "
+
+# switch to next pane
+  <leader> o
+ 
+# toggle between pane layouts
+  <leader> <space>
+
+# close current pane
+  <leader> x
+
+# convert pane to window
+  <leader> !

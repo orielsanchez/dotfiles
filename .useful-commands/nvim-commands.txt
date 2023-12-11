@@ -1,0 +1,85 @@
+leader .
+
+# exit insert mode
+  kj
+
+# insert mode/new line
+  o
+
+# move up/down paragraph
+  {/}
+
+# jump forward/backword x amt of words
+  w/b
+  or 2w/2b
+
+# move up and down functions (?)
+  [[/]]
+
+# move to line number, e.g. line 10
+  :10
+
+# delete until end-of-line and insert mode
+  C
+
+# enter insert mode after cursor (append)
+  a
+
+# save/autorun current python file
+ ,m 
+
+----------------------
+NVIM-TREE
+
+# move between planes
+  C-w h/j/k/l
+
+# open nvim-tree
+  C-n
+
+-----------------------
+GIT/GITHUB
+
+# create new repo
+  gh repo create
+
+# initialize an existing directory as a git repo
+  git init -b main
+
+# retrieve an entire rpepo from a hosted location via URL
+  git clone [url]
+
+# show modified files in pwd, staged for next commit
+  git status
+
+# add a file as it looks now to next commit )(stage)
+  git add [file]
+
+# unstage a file while retaining changes in pwd
+  git reset [file]
+
+# diff of what is changed but not staged
+  git diff
+
+# diff of what is staged but no yet committed
+  git diff --staged
+
+# commit staged content
+git commit -m "[descriptive message]"
+
+
+# share and update
+# add a git url as an alias
+  git remote add [alias] [url]
+
+# fetch down all the branches from that Git remote
+  git fetch [alias]
+
+# merge remote branch into current branch to bring it up to date
+  git merge [alias]/[branch]
+
+# transmit local branch commits to the remote repo branch
+  git push [alias] [branch]
+
+# fetch and merge any commits from the tracking remote branch
+  git pull
