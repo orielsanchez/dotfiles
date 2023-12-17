@@ -4,6 +4,7 @@ upgrade all that was installed via cask:
 open python/jupyter:
 	$ conda activate; jupyter lab;
 
-TO DO
-learn TMUX
-set up scripts for above in here
+delete word going back:
+C-w
+
+

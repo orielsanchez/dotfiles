@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "create-next-app": "^13.4.7",
+    "create-vite": "^4.3.2"
+  }
+}

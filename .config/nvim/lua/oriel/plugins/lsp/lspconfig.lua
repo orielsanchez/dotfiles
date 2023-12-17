@@ -134,7 +134,12 @@ return {
 		-- configure c server
 		lspconfig["clangd"].setup({
 			capabilities = capabilities,
-			on_attach = on_attach,
+			on_attach = function(client, bufnr)
+				on_attach(client, bufnr)
+				if client.name == "cpp" then
+					vim.opt.keywordprg = "cppman"
+				end
+			end,
 		})
 
 		-- configure ocaml server

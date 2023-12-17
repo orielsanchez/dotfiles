@@ -22,6 +22,7 @@ opt.hlsearch = false
 opt.cursorline = true -- highlight the current cursor line
 
 -- appearance
+opt.colorcolumn = "80"
 
 -- turn on termguicolors for nightfly colorscheme to work
 -- (have to use iterm2 or any other true color terminal)
