@@ -3,6 +3,30 @@ export PATH=/opt/homebrew/anaconda3/bin:$PATH
 export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
 export PATH=$PATH:~/.local/bin
 
+function zle-keymap-select {
+    if [[ $KEYMAP == vicmd ]] || [[ $1 == 'block' ]]; then
+        # Prompt for NORMAL mode
+        echo -ne "\e[1 q"
+        PS1="[NORMAL] $PS1_ORIGINAL"
+    elif [[ $KEYMAP == main ]] || [[ $KEYMAP == viins ]] || [[ $1 == 'beam' ]]; then
+        # Prompt for INSERT mode
+        echo -ne "\e[5 q"
+        PS1="[INSERT] $PS1_ORIGINAL"
+    fi
+}
+zle -N zle-keymap-select
+# use vi key bindings
+bindkey -v
+# avoid the annoying backspace/delete issue 
+# where backspace stops deleting characters
+bindkey -v '^?' backward-delete-char
+bindkey -M viins 'kj' vi-cmd-mode
+
+# Save original PS1
+PS1_ORIGINAL="$PS1"
+
+zle-keymap-select
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/opt/homebrew/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"

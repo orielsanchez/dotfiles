@@ -42,3 +42,9 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
+
+-- ledger
+vim.g.ledger_maxwidth = 80
+vim.g.ledger_fillstring = "    -"
+vim.g.ledger_fold_blanks = 0
+vim.g.ledger_default_commodity = "$"
