@@ -1,9 +1,0 @@
-0000000000000000000000000000000000000000 b819a8131084b123631d2ed06d15aa86c62bb2e8 Oriel Sanchez <orielbenitosanchez@gmail.com> 1702252437 -0800	commit (initial): initial commit
-b819a8131084b123631d2ed06d15aa86c62bb2e8 b819a8131084b123631d2ed06d15aa86c62bb2e8 Oriel Sanchez <orielbenitosanchez@gmail.com> 1702252615 -0800	Branch: renamed refs/heads/main to refs/heads/main
-b819a8131084b123631d2ed06d15aa86c62bb2e8 76978926d6789a5d1cc6cc33145f311c7d7fce96 Oriel Sanchez <orielbenitosanchez@gmail.com> 1702252735 -0800	commit: adde .tmux.conf
-76978926d6789a5d1cc6cc33145f311c7d7fce96 9057e17b548ba1eeb4ed8b75e03af771897f0165 Oriel Sanchez <orielbenitosanchez@gmail.com> 1702252787 -0800	commit: added nvim
-9057e17b548ba1eeb4ed8b75e03af771897f0165 0a835808f58d7614efdfd2cad58140aa1de47021 Oriel Sanchez <orielbenitosanchez@gmail.com> 1702252833 -0800	commit: more files
-0a835808f58d7614efdfd2cad58140aa1de47021 df07d73ce37e54605241042f714f07d4eadcd5b3 Oriel Sanchez <orielbenitosanchez@gmail.com> 1702252896 -0800	commit: add readme
-df07d73ce37e54605241042f714f07d4eadcd5b3 cc8fedfc2d9adb0c3eab4f84c1ee001a13e5e7b3 Oriel Sanchez <orielbenitosanchez@gmail.com> 1702252991 -0800	commit: delete readme
-cc8fedfc2d9adb0c3eab4f84c1ee001a13e5e7b3 d4bfd82db7363539b03148baf362e35ec9f65916 Oriel Sanchez <orielbenitosanchez@gmail.com> 1702253135 -0800	commit: add readme
-d4bfd82db7363539b03148baf362e35ec9f65916 a5c1c6fd9babbb3e424492b0226e5d922d8ec69b Oriel Sanchez <orielbenitosanchez@gmail.com> 1702253213 -0800	commit: updated readme
