@@ -62,6 +62,7 @@ return {
 						color = { fg = "#ff9e64" },
 					},
 					{ "encoding" },
+					{ "filename", file_status = true, path = 1 },
 					{ "fileformat" },
 					{ "filetype" },
 				},
