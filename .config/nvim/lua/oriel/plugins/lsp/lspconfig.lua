@@ -133,6 +133,7 @@ return {
 
 		-- configure c server
 		lspconfig["clangd"].setup({
+			cmd = { "clangd", "--fallback-style=webkit", "--std=c++23" },
 			capabilities = capabilities,
 			on_attach = function(client, bufnr)
 				on_attach(client, bufnr)
